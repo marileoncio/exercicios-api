@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Exercicio;
+use App\Http\Controllers\Exercicio1;
 use App\Http\Controllers\Exercicio2;
 use App\Http\Controllers\Exercicio3;
 use App\Http\Controllers\Exercicio4;
