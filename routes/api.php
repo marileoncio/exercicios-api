@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\Exercicio;
+use App\Http\Controllers\Exercicio2;
+use App\Http\Controllers\Exercicio3;
+use App\Http\Controllers\Exercicio4;
+use App\Http\Controllers\Exercicio5;
+use App\Http\Controllers\Exercicio6;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,17 +21,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('exercicio/um', 
-[ExercicioUmController::class, 'multiplicar']);
+[Exercicio1::class, 'multiplicar']);
 
 Route::post('exercicio/dois', 
-[ExercicioDoisController::class, 'retornarMaior']);
+[Exercicio2::class, 'retornarMaior']);
 
 Route::post('exercicio/3', 
-[Exercicio3Controller::class, 'media']);
+[Exercicio3::class, 'media']);
 
 Route::post('exercicio/quatro', 
-[ExercicioQuatroController::class, 'verificar']);
+[Exercicio4::class, 'verificar']);
 
 Route::post('exercicio/5', 
-[Exercicio5Controller::class, 'divisivel']);
+[Exercicio5::class, 'divisivel']);
+
+Route::post('exercicio/seis',
+[Exercicio6::class, 'verificarIdade']);
+
 
