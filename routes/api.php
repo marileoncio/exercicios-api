@@ -38,4 +38,7 @@ Route::post('exercicio/5',
 Route::post('exercicio/seis',
 [Exercicio6::class, 'verificarIdade']);
 
+Route::get('exercicio/sete', 
+[Exercicio7::class, 'exibirNumeros']);
+
 
