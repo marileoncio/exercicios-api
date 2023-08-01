@@ -6,6 +6,8 @@ use App\Http\Controllers\Exercicio3;
 use App\Http\Controllers\Exercicio4;
 use App\Http\Controllers\Exercicio5;
 use App\Http\Controllers\Exercicio6;
+use App\Http\Controllers\Exercicio7;
+use App\Http\Controllers\Exercicio8;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -40,5 +42,8 @@ Route::post('exercicio/seis',
 
 Route::get('exercicio/sete', 
 [Exercicio7::class, 'exibirNumeros']);
+
+Route::post('exercicio/8', 
+[Exercicio8::class, 'exibirTabuada']);
 
 
